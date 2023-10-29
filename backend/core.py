@@ -20,6 +20,7 @@ pinecone.init(
     # environment=os.environ["PINECONE_ENVIRONMENT_REGION"],
 )
 
+OPENAI_API_KEY='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'
 
 def run_llm(query: str, chat_history: List[Dict[str, Any]]=[]) -> Any:
     embeddings = OpenAIEmbeddings()
