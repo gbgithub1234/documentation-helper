@@ -20,14 +20,14 @@ pinecone.init(
     # environment=os.environ["PINECONE_ENVIRONMENT_REGION"],
 )
 
-OPENAI_API_KEY='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'
+OPENAI_API_KEY='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'
 
 def run_llm(query: str, chat_history: List[Dict[str, Any]]=[]) -> Any:
-    embeddings = OpenAIEmbeddings(openai_api_key='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')
+    embeddings = OpenAIEmbeddings(openai_api_key='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')
     docsearch = Pinecone.from_existing_index(
         index_name=INDEX_NAME, embedding=embeddings
     )
-    chat = ChatOpenAI(verbose=True, temperature=0, openai_api_key='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')
+    chat = ChatOpenAI(verbose=True, temperature=0, openai_api_key='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')
 
     qa = ConversationalRetrievalChain.from_llm(
         llm=chat, retriever=docsearch.as_retriever(), return_source_documents=True
