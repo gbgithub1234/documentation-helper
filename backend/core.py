@@ -1,5 +1,5 @@
 import os
-
+import streamlit as st
 from typing import Any, List, Dict
 
 from langchain.embeddings.openai import OpenAIEmbeddings
@@ -20,14 +20,13 @@ pinecone.init(
     # environment=os.environ["PINECONE_ENVIRONMENT_REGION"],
 )
 
-OPENAI_API_KEY='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'
 
 def run_llm(query: str, chat_history: List[Dict[str, Any]]=[]) -> Any:
-    embeddings = OpenAIEmbeddings(openai_api_key='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')
+    embeddings = OpenAIEmbeddings(openai_api_key=st.secrets["OPENAI_API_KEY"])
     docsearch = Pinecone.from_existing_index(
         index_name=INDEX_NAME, embedding=embeddings
     )
-    chat = ChatOpenAI(verbose=True, temperature=0, openai_api_key='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')
+    chat = ChatOpenAI(verbose=True, temperature=0, openai_api_key=st.secrets["OPENAI_API_KEY"])
 
     qa = ConversationalRetrievalChain.from_llm(
         llm=chat, retriever=docsearch.as_retriever(), return_source_documents=True
