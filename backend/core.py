@@ -23,7 +23,7 @@ pinecone.init(
 OPENAI_API_KEY='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'
 
 def run_llm(query: str, chat_history: List[Dict[str, Any]]=[]) -> Any:
-    embeddings = OpenAIEmbeddings()
+    embeddings = OpenAIEmbeddings(openai_api_key='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')
     docsearch = Pinecone.from_existing_index(
         index_name=INDEX_NAME, embedding=embeddings
     )
