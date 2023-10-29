@@ -10,6 +10,9 @@ import pinecone
 
 from consts import INDEX_NAME
 
+PINECONE_API_KEY='b32d298b-1cae-446f-9306-2d13539791df'
+PINECONE_ENVIRONMENT_REGION='gcp-starter'
+
 pinecone.init(
     api_key=os.environ["PINECONE_API_KEY"],
     environment=os.environ["PINECONE_ENVIRONMENT_REGION"],
