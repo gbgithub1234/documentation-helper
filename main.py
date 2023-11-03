@@ -10,18 +10,20 @@ st.header("SFU AAE Chatbot 1.1 (beta)")
 
 #------------------------------------------
 url = "https://drive.google.com/drive/u/0/folders/1gTD-OiqH5Bg3-ZqVuur9q8h-AGIzOlB7"
+url2 = "https://www.pinecone.io/"
 
 multiline_str1 = """
 - created by Glen Brauer, Business Analyst in AAE (glenb@sfu.ca) \n
-- leverages ChatGPT and private vector storage to access these [sample documents](%s)""" % url
+- leverages ChatGPT and [Pinecone vector storage](%s) """ % url2
 
+multiline_str2 = """to access these [sample documents](%s)""" % url
 
-multiline_str2 ="""\n - sample question: 'How can I create a marketing effort?' \n"""
+multiline_str3 ="""\n - sample question: 'How can I create a marketing effort?' \n"""
 
 
 
 with st.expander("Show/hide details"):
-    st.write(multiline_str1 + multiline_str2)
+    st.write(multiline_str1 + multiline_str2 + multiline_str3)
 
 
     # st.markdown("- created by Glen Brauer, Business Analyst in AAE")
