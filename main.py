@@ -20,7 +20,7 @@ multiline_str2 ="""\n - sample question: 'How can I create a marketing effort?' 
 
 
 
-with st.expander("Details"):
+with st.expander("Show/hide details"):
     st.write(multiline_str1 + multiline_str2)
 
 
