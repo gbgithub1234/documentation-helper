@@ -15,7 +15,7 @@ st.markdown("- sample prompt: 'How can I create a marketing effort?'")
 
 url = "https://drive.google.com/drive/u/0/folders/1gTD-OiqH5Bg3-ZqVuur9q8h-AGIzOlB7"
 
-st.write("- documents which have been ingested are located [here](%s)" % url)
+st.write("- sample documents which have been ingested are located [here](%s)" % url)
 #------------------------------------------
 
 if "user_prompt_history" not in st.session_state:
