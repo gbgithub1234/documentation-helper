@@ -8,7 +8,15 @@ from streamlit_chat import message
 st.header("SFU AAE Chatbot 1.1 (beta)")
 # st.header("LangChain Udemy Course- Documentation Helper Bot")
 
+#------------------------------------------
+st.markdown("- created by Glen Brauer, Business Analyst in AAE")
+st.markdown("- demonstrates the ability to leverage ChatGPT and vector storage to access documents")
+st.markdown("- sample question: 'How can I create a marketing effort?'")
 
+url = "https://drive.google.com/drive/u/0/folders/1gTD-OiqH5Bg3-ZqVuur9q8h-AGIzOlB7"
+
+st.write("- documents which have been ingested are located [here](%s)" % url)
+#------------------------------------------
 
 if "user_prompt_history" not in st.session_state:
     st.session_state["user_prompt_history"] = []
