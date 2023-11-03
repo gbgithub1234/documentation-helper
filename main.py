@@ -11,15 +11,17 @@ st.header("SFU AAE Chatbot 1.1 (beta)")
 #------------------------------------------
 url = "https://drive.google.com/drive/u/0/folders/1gTD-OiqH5Bg3-ZqVuur9q8h-AGIzOlB7"
 
-multiline_str = """
+multiline_str1 = """
 - created by Glen Brauer, Business Analyst in AAE (glenb@sfu.ca) \n
-- demonstrates the ability to leverage ChatGPT and vector storage to access documents \n
-- sample question: 'How can I create a marketing effort?' \n
-- documents which have been ingested are located [here](%s)""" % url
+- leverages ChatGPT and vector storage to access these [documents](%s)""" % url
+
+
+multiline_str2 ="""\n - sample question: 'How can I create a marketing effort?' \n"""
+
 
 
 with st.expander("Details"):
-    st.write(multiline_str)
+    st.write(multiline_str1 + multiline_str2)
 
 
     # st.markdown("- created by Glen Brauer, Business Analyst in AAE")
