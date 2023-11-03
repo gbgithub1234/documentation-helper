@@ -5,7 +5,7 @@ import streamlit as st
 from streamlit_chat import message
 
 
-st.header("SFU AAE Chatbot 1.0 (beta)")
+st.header("SFU AAE Chatbot 1.1 (beta)")
 # st.header("LangChain Udemy Course- Documentation Helper Bot")
 
 
