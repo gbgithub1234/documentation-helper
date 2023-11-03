@@ -10,7 +10,7 @@ st.header("SFU AAE Chatbot 1.1 (beta)")
 
 #------------------------------------------
 st.markdown("- created by Glen Brauer, Business Analyst in AAE")
-st.markdown("- demonstrates the ability to leverage ChatGPT and vector storage to access documents-based information")
+st.markdown("- demonstrates the ability to leverage ChatGPT to access documents-based information")
 st.markdown("- sample prompt: 'How can I create a marketing effort?'")
 
 url = "https://drive.google.com/drive/u/0/folders/1gTD-OiqH5Bg3-ZqVuur9q8h-AGIzOlB7"
