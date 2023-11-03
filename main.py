@@ -18,7 +18,7 @@ multiline_str1 = """
 
 multiline_str2 = """to access these [sample documents](%s)""" % url
 
-multiline_str3 ="""\n - sample question: 'How can I create a marketing effort?' \n"""
+multiline_str3 ="""\n - sample prompt: 'How can I create a marketing effort?' \n"""
 
 
 
