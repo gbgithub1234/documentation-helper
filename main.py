@@ -13,7 +13,7 @@ url = "https://drive.google.com/drive/u/0/folders/1gTD-OiqH5Bg3-ZqVuur9q8h-AGIzO
 
 multiline_str1 = """
 - created by Glen Brauer, Business Analyst in AAE (glenb@sfu.ca) \n
-- leverages ChatGPT and private vector storage to access these [documents](%s)""" % url
+- leverages ChatGPT and private vector storage to access these [sample documents](%s)""" % url
 
 
 multiline_str2 ="""\n - sample question: 'How can I create a marketing effort?' \n"""
