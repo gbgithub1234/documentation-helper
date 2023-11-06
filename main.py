@@ -10,6 +10,9 @@ url = "https://drive.google.com/drive/u/0/folders/1gTD-OiqH5Bg3-ZqVuur9q8h-AGIzO
 url2 = "https://www.pinecone.io/"
 
 multiline_str1 = """
+
+This page is currently being updated. I apologize for the inconvenience. \n
+
 - created by Glen Brauer, Business Analyst in AAE (glenb@sfu.ca) \n
 
 - PROBLEM: document-based information is located in many places taking time to find\n
