@@ -5,9 +5,6 @@ import streamlit as st
 from streamlit_chat import message
 
 
-st.header("SFU AAE Chatbot 1.1 (beta)")
-# st.header("LangChain Udemy Course- Documentation Helper Bot")
-
 #------------------------------------------
 url = "https://drive.google.com/drive/u/0/folders/1gTD-OiqH5Bg3-ZqVuur9q8h-AGIzOlB7"
 url2 = "https://www.pinecone.io/"
@@ -35,6 +32,8 @@ with st.expander("Show/hide details"):
     # st.write("- documents which have been ingested are located [here](%s)" % url)
 
 #------------------------------------------
+st.header("SFU AAE Chatbot 1.1 (beta)")
+
 
 if "user_prompt_history" not in st.session_state:
     st.session_state["user_prompt_history"] = []
