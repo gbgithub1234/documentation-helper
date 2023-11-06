@@ -12,7 +12,7 @@ url2 = "https://www.pinecone.io/"
 multiline_str1 = """
 - created by Glen Brauer, Business Analyst in AAE (glenb@sfu.ca) \n
 
-- PROBLEM: document-based information can be scattered in many places\n
+- PROBLEM: document-based information is located in many places taking time to find\n
 
 - SOLUTION: provide a one-stop shopping resource for all document-based information\n
 
