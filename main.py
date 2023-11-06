@@ -120,9 +120,3 @@ with st.form(key='myform', clear_on_submit=True):
 
 
 
-
-#------------------------------------------
-
-
-
-# if prompt:
