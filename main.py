@@ -11,7 +11,7 @@ url2 = "https://www.pinecone.io/"
 
 multiline_str1 = """
 
-- this page is currently being updated. I apologize for the inconvenience. \n
+- ***this page is currently being updated. I apologize for the inconvenience*** \n
 
 - created by Glen Brauer, Business Analyst in AAE (glenb@sfu.ca) \n
 
