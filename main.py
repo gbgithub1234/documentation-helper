@@ -66,7 +66,7 @@ def create_sources_string(source_urls: Set[str]) -> str:
 
 
 
-with st.form(key='myform', clear_on_submit=True):
+#with st.form(key='myform', clear_on_submit=True):
     #prompt = st.text_input("Prompt", placeholder="Enter your prompt here..")
     #submit_button = st.form_submit_button("Submit")
     
