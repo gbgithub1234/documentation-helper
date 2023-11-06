@@ -16,7 +16,7 @@ multiline_str1 = """
 
 - SOLUTION: provide a one-stop shopping resource for all document-based information\n
 
-- leverages ChatGPT and [Pinecone vector storage](%s) """ % url2
+- leverages AI and [Pinecone vector storage](%s) """ % url2
 
 multiline_str2 = """to access these [sample documents](%s)""" % url
 
