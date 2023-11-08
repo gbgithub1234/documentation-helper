@@ -11,8 +11,6 @@ url2 = "https://www.pinecone.io/"
 
 multiline_str1 = """
 
-- ***this page is currently being updated. I apologize for the inconvenience*** \n
-
 - created by Glen Brauer, Business Analyst in AAE (glenb@sfu.ca) \n
 
 - PROBLEM: document-based information is located in many places taking time to find\n
