@@ -69,42 +69,41 @@ def create_sources_string(source_urls: Set[str]) -> str:
 
 
 
-#with st.form(key='myform', clear_on_submit=True):
-    #prompt = st.text_input("Prompt", placeholder="Enter your prompt here..")
-    #submit_button = st.form_submit_button("Submit")
+with st.form(key='myform', clear_on_submit=True):
+    prompt = st.text_input("Prompt", placeholder="Enter your prompt here..")
+    submit_button = st.form_submit_button("Submit")
     
-    # message("message 1", is_user=True)
-    # message("message 2")
 
 
-# if submit_button:
-#     with st.spinner("Generating response.."):
-#         generated_response = run_llm(
-#             query=prompt, chat_history=st.session_state["chat_history"]
-#         )
-# 
-# 
-# 
-# 
-#         sources = set(
-#             [doc.metadata["source"] for doc in generated_response["source_documents"]]
-#         )
-# 
-#         formatted_response = (
-#             f"{generated_response['answer']} \n\n {create_sources_string(sources)}"
-#         )
-# 
-# 
-#         #-----------------
-#         message(prompt, is_user=True)
-#         message(formatted_response)
-#         #-----------------
-# 
-# 
-#         st.session_state["user_prompt_history"].append(prompt)
-#         st.session_state["chat_answers_history"].append(formatted_response)
-#         st.session_state["chat_history"].append((prompt, generated_response["answer"]))
-# 
+
+if submit_button:
+    with st.spinner("Generating response.."):
+        generated_response = run_llm(
+            query=prompt, chat_history=st.session_state["chat_history"]
+        )
+
+
+
+
+        sources = set(
+            [doc.metadata["source"] for doc in generated_response["source_documents"]]
+        )
+
+        formatted_response = (
+            f"{generated_response['answer']} \n\n {create_sources_string(sources)}"
+        )
+
+
+        #-----------------
+        message(prompt, is_user=True)
+        message(formatted_response)
+        #-----------------
+
+
+        st.session_state["user_prompt_history"].append(prompt)
+        st.session_state["chat_answers_history"].append(formatted_response)
+        st.session_state["chat_history"].append((prompt, generated_response["answer"]))
+
 
 
         # clear the inputbox
@@ -120,6 +119,3 @@ def create_sources_string(source_urls: Set[str]) -> str:
 #     ):
 #         message(user_query, is_user=True)
 #         message(generated_response)
-
-
-
