@@ -7,9 +7,9 @@ from langchain.chat_models import ChatOpenAI
 from langchain.chains import ConversationalRetrievalChain
 from langchain.vectorstores import Pinecone
 from pinecone import Pinecone, ServerlessSpec
-    pc = Pinecone(
-        api_key=os.environ.get(st.secrets["PINECONE_API_KEY"])
-    )
+pc = Pinecone(
+    api_key=os.environ.get(st.secrets["PINECONE_API_KEY"])
+)
 
 from consts import INDEX_NAME
 
