@@ -6,10 +6,7 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.chat_models import ChatOpenAI
 from langchain.chains import ConversationalRetrievalChain
 from langchain.vectorstores import Pinecone
-from pinecone import Pinecone, ServerlessSpec
-pc = Pinecone(
-    api_key=os.environ.get(st.secrets["PINECONE_API_KEY"])
-)
+import pinecone
 
 from consts import INDEX_NAME
 
@@ -24,7 +21,7 @@ from consts import INDEX_NAME
 
 def run_llm(query: str, chat_history: List[Dict[str, Any]]=[]) -> Any:
     embeddings = OpenAIEmbeddings(openai_api_key=st.secrets["OPENAI_API_KEY"])
-    docsearch = pc.from_existing_index(
+    docsearch = Pinecone.from_existing_index(
         index_name=INDEX_NAME, embedding=embeddings
     )
     chat = ChatOpenAI(verbose=True, temperature=0, openai_api_key=st.secrets["OPENAI_API_KEY"])
