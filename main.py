@@ -1,12 +1,14 @@
 import streamlit as st
 
-# Set the new Streamlit app URL
+# Target URL for the new app
 new_url = "https://chatbot-pinecone-update-xfbotzptgbtt2kk5e46pfg.streamlit.app/"
 
-# Delay redirect by 3 seconds to avoid redirect loops
+# Instant JavaScript redirect (no delay)
 st.markdown(f"""
-    <meta http-equiv="refresh" content="3; url={new_url}">
-    <h3>🔁 Redirecting you to the updated chatbot...</h3>
-    <p>This app has moved to a new address.</p>
+    <h3>🔁 Redirecting to the updated chatbot...</h3>
     <p>If you're not automatically redirected, <a href="{new_url}">click here</a>.</p>
+
+    <script>
+        window.location.href = "{new_url}";
+    </script>
 """, unsafe_allow_html=True)
