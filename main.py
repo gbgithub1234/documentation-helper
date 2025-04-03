@@ -3,12 +3,16 @@ import streamlit as st
 # Target URL for the new app
 new_url = "https://chatbot-pinecone-update-xfbotzptgbtt2kk5e46pfg.streamlit.app/"
 
-# Instant JavaScript redirect (no delay)
-st.markdown(f"""
-    <h3>🔁 Redirecting to the updated chatbot...</h3>
-    <p>If you're not automatically redirected, <a href="{new_url}">click here</a>.</p>
+st.title("🚨 This App Has Moved")
 
-    <script>
-        window.location.href = "{new_url}";
-    </script>
-""", unsafe_allow_html=True)
+st.markdown("""
+The SFU Document Chatbot has been updated and moved to a new address.
+
+Please click the button below to access the latest version:
+""")
+
+st.link_button("🔗 Go to New Chatbot", new_url)
+
+st.markdown(f"""
+If the button doesn't work, [click here]({new_url}) to go directly.
+""")
