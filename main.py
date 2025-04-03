@@ -3,7 +3,7 @@ import streamlit as st
 # Target URL for the new app
 new_url = "https://chatbot-pinecone-update-xfbotzptgbtt2kk5e46pfg.streamlit.app/"
 
-st.title("🚨 This App Has Moved")
+st.title("🚨 This App Has Moved...")
 
 st.markdown("""
 The SFU Document Chatbot has been updated and moved to a new address.
