@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Target URL for the new app
-new_url = "https://chatbot-pinecone-update-xfbotzptgbtt2kk5e46pfg.streamlit.app/"
+new_url = "https://docbotpy-elwrplfvhqnhox2xz9umin.streamlit.app/"
 
 st.title("🚨 This App Has Moved...")
 
